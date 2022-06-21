@@ -1,6 +1,6 @@
 import { Repository } from 'typeorm';
 import { Task } from './task.entity';
-import { CustomRepository } from './database/typeorm-ex.decorator';
+import { CustomRepository } from '../database/typeorm-ex.decorator';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 
 @CustomRepository(Task)
