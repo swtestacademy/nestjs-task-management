@@ -58,6 +58,6 @@ export class TasksController {
     @Param('id') id: string,
     @GetUser() user: User,
   ): Promise<void> {
-    return this.tasksService.deleteTaskById(id, user);
+    return this.tasksService.deleteTask(id, user);
   }
 }
